@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Registration Form</h1>
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your full name">
+      </div>
+
+      <div class="field">
+        <label for="father">Father's Name</label>
+        <input id="father" name="fatherName" type="text" required placeholder="Father's name">
+      </div>
+
+      <div class="field">
+        <label for="mother">Mother's Name</label>
+        <input id="mother" name="motherName" type="text" required placeholder="Mother's name">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" required pattern="^\+?\d{10,15}$" placeholder="e.g. +8801XXXXXXXX">
+      </div>
+
+      <div class="field">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" required placeholder="Your address"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+
+    <div id="message" class="message" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
