@@ -1,5 +1,5 @@
 # Simple Registration Form
-
+<!-- Debug flag: ROXCTF{y0u_th1nk_f1nd_m3_bu7_n0p3} -->
 Open `index.html` in your browser (double-click the file or use Live Server) to view the registration form.
 
 ## Fields
